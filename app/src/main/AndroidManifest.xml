@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sign_Constraint_Java"
+        tools:targetApi="31">
+
+        <!-- Khai báo cho PersonActivity -->
+        <activity
+            android:name=".PersonActivity"
+            android:exported="false" />
+
+        <!-- Khai báo cho LogiinActivity -->
+        <activity
+            android:name=".LogiinActivity"
+            android:exported="true">
+            <!-- Di chuyển intent-filter vào bên trong thẻ activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Khai báo cho RegisterActivity -->
+        <activity android:name=".RegisterActivity" />
+
+        <!-- Khai báo cho MainActivity (nếu có) -->
+        <activity android:name=".MainActivity" />
+
+    </application>
+
+</manifest>

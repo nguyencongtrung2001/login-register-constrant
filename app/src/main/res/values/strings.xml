@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sign_Constraint_Java</string>
+    <string name="textuser">Username</string>
+    <string name="textpass">Password</string>
+</resources>
